@@ -30,7 +30,7 @@
     width: 80px;
     height:80px;
     border-radius: 50%;
-    transition: all 0.3s
+    transition: all 0.7s
 }
 
 #section .category .depth1 li>a:hover::before{
