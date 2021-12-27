@@ -1,0 +1,164 @@
+@charset "utf-8";
+
+/* main category */
+
+#section>.mainimg {
+    height: 580px;
+    background: #fff url(../img/mainspot_211216.png) no-repeat;
+    background-size: 924px auto;
+    background-position: bottom;
+}
+
+#section .category .depth1 {
+    overflow: hidden;
+    padding: 40px 0 70px;
+    
+}
+
+#section .category .depth1 li {
+    float: left;
+    text-align: center;
+    width:11.1%;
+    position:relative;
+}
+
+#section .category .depth1 li>a::before {
+    content: '';
+    position:absolute;
+    top:-5px;
+    right:15%;
+    width: 80px;
+    height:80px;
+    border-radius: 50%;
+    transition: all 0.3s
+}
+
+#section .category .depth1 li>a:hover::before{
+    background: rgba(0,0,0,0.15)
+}
+
+#section .category .depth1 li>a>div {
+    display:block;
+}
+
+
+#section .category .depth1 li img {
+    width:70px;
+}
+
+#section .category .depth1 li span {
+    display:block;
+    padding-top: 10px;
+    color: #707070;
+}
+
+
+.article {
+    padding:0 30px;
+}
+
+/* news */
+#section .news { 
+    padding-bottom: 80px;
+    /* border: 1px solid violet; */
+}
+
+#section .news .newsbox {
+    overflow: hidden;
+    padding-top: 30px;
+}
+
+#section .news .newsbox li {
+    float:left;
+    width:475px;
+    height: 162px;
+    border: 1px solid rgba(0,0,0,0.1);
+    position:relative;
+}
+#section .news .newsbox li+li{
+margin-left: 10px;}
+
+#section .news .newsbox li img {
+    float: left;
+    height: 100%
+}
+
+#section .news .newsbox li .nstext {
+    position:absolute;
+    left: 160px;
+    top: 0;
+    padding: 30px 30px;
+}
+
+#section .news .newsbox li .nstext strong {
+    color: green;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+#section .news .newsbox li .nstext p {
+    padding-top: 15px;
+    line-height: 1.7em;
+    font-size:17px;
+    color: #707070
+}
+
+/* app download */
+
+#section .downloadbox {
+    height: 350px;
+    width: 962px;
+    background: url(../img/bg_appdown.png) no-repeat;
+    background-size: cover;
+    margin-bottom : 70px;
+}
+
+#section .downloadbox .downloadinfo {
+    text-align : center;
+    padding-top : 90px;
+    /* border: 1px solid red; */
+} 
+
+#section .downloadbox .downloadinfo .dldtitle {
+    font-size : 28px;
+}
+
+#section .downloadbox .downloadinfo .dldbox{margin-top:30px;}
+
+#section .downloadbox .downloadinfo .dldbox  img{
+    width:168px;
+    /* background: blue; */
+}
+
+#section .downloadbox .downloadinfo .dldbox a+a {
+    margin-left: 10px;
+}
+
+
+/* event */
+#section .event {
+    padding-bottom: 120px;
+}
+
+#section .event .banner1{
+    padding: 30px 0;
+
+}
+
+#section .event .banner1 img {
+    width:960px;
+}
+
+#section .event .banner2 ul {
+    overflow:hidden;
+}
+
+#section .event .banner2 ul li {
+    width : 475px;
+    float:left;
+    /* border: 1px solid red; */
+}
+
+#section .event .banner2 ul li+li {
+    margin-left: 10px;
+}

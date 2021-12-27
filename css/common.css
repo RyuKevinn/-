@@ -1,0 +1,191 @@
+@charset "utf-8";
+
+/* header 구역  */
+
+
+#header {
+    background: #F7323F;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+#header .logo {
+    padding: 10px 0 20px 30px
+}
+
+#header .nav {
+    float: right;
+    color: white;
+}
+
+#header h1 {
+    float: left;
+}
+
+#header .nav>.depth1>li {
+    float: left;
+    padding: 25px 20px 10px;
+    position: relative
+}
+
+#header .nav>.depth1>li>a {
+    font-size: 18px;
+    display: inline-block;
+}
+
+#header .nav>.depth1>li:first-child {
+    transform: translate(10px);
+}
+
+#header .nav>.depth1>li>a:hover {
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+}
+
+#header .nav .depth2 {
+    width: 160px;
+    position: absolute;
+    top: 100%;
+    left: -30px;
+    display: none;
+    padding: 15px;
+    border-radius: 20px;
+    background: white;
+    color: black;
+    box-shadow: 5px 10px 20px 1px rgb(0, 0, 0, 0.7);
+}
+
+#header .nav .depth2 li {
+    /* padding: 10px; */
+
+}
+
+#header .nav .depth2 li a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+#header .nav .depth1>li:hover .depth2 {
+    display: block;
+}
+
+#header .nav .depth1>li .depth2> li:hover>a {
+    background: rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+/* footer 구역 */
+
+#footer {
+    background: #f5f5f5;
+    box-shadow: 0 -1px 3px 0 rgb(0, 0, 0, 0.2);
+    color: #00000061
+}
+
+#footer .row {
+    padding: 60px 20px 0;
+}
+
+#footer .row .footerlink,
+#footer .row .info {
+    font-size: 13px;
+}
+
+#footer .row .footerlink>ul {
+    overflow: hidden;
+}
+
+#footer .row .footerlink>ul>li {
+    float: left;
+}
+
+#footer .row .footerlink li a {
+    margin: 0 10px;
+    position: relative;
+}
+
+#footer .row .footerlink li a::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 10px;
+    background: #00000061;
+    top: 4px;
+    right: -10px;
+}
+
+#footer .row .footerlink li:nth-child(3) {
+    color: black;
+}
+
+#footer .row .footerlink li:last-child a::after {
+    display: none;
+}
+
+#footer .row .info .infodesk {
+    padding: 30px 0;
+}
+
+#footer .row .info .infodesk span {
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+footer .row .info .companyinfo ul>li{
+    line-height: 1.7em;
+}
+
+#footer .row .info .companyinfo ul>li:first-child {
+    padding-bottom: 10px;
+}
+
+#footer .row .info .companyinfo ul>li:last-child {
+    padding-top: 8px;
+}
+
+#footer .row .sns {
+    border-top: 1px solid rgba(0,0,0,0.05);
+    margin: 20px 0 5px 0;
+    padding: 30px 0 50px ;
+    text-align:center;
+}
+
+#footer .row .sns .snstitle{ font-weight: bold;
+padding-bottom : 5px;}
+
+#footer .row .sns a {
+    font-size : 30px;
+    margin: 0 10px;
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s
+}
+
+#footer .row .sns a:hover {
+    color: rgba(0,0,0,0.25)
+}
+
+#footer .topbtn {
+    position: fixed;
+    bottom:30px;
+    right: 30px;
+    width: 50px;
+}
+
+#footer .topbtn>a::after{
+    content: '';
+    position: absolute;
+    top:0;
+    right:0;
+    width:50px;
+    height: 50px;
+    transition: all 0.3s
+}
+
+#footer .topbtn:hover>a::after {
+    background: rgba(0,0,0,0.2)
+}
