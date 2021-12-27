@@ -1,1 +1,1 @@
-# -https://ryukevinn.github.io/-/
+https://ryukevinn.github.io/goodchoice/
