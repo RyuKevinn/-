@@ -25,6 +25,10 @@
     float: left;
 }
 
+#header .nav>.depth1 {
+    padding-right: 10px;
+}
+
 #header .nav>.depth1>li {
     float: left;
     padding: 25px 20px 10px;
@@ -58,15 +62,11 @@
     box-shadow: 5px 10px 20px 1px rgb(0, 0, 0, 0.7);
 }
 
-#header .nav .depth2 li {
-    /* padding: 10px; */
-
-}
-
 #header .nav .depth2 li a {
     display: block;
     text-align: center;
     padding: 10px;
+    transition: all 0.5s
 }
 
 #header .nav .depth1>li:hover .depth2 {
@@ -127,7 +127,7 @@
 }
 
 #footer .row .info .infodesk {
-    padding: 30px 0;
+    padding: 25px 0;
 }
 
 #footer .row .info .infodesk span {
@@ -150,7 +150,7 @@ footer .row .info .companyinfo ul>li{
 #footer .row .sns {
     border-top: 1px solid rgba(0,0,0,0.05);
     margin: 20px 0 5px 0;
-    padding: 30px 0 50px ;
+    padding: 20px 0 30px ;
     text-align:center;
 }
 
@@ -168,6 +168,8 @@ padding-bottom : 5px;}
 #footer .row .sns a:hover {
     color: rgba(0,0,0,0.25)
 }
+
+/* top btn */
 
 #footer .topbtn {
     position: fixed;
