@@ -146,25 +146,25 @@ margin-left: 16px;}
     padding-bottom: 120px;
 }
 
-#section .event .banner1{
+#section .event .slideouter{
     padding: 30px 0 25px;
 
 }
 
-#section .event .banner1 img {
+#section .event .slideouter .slideinner img {
     width:100%
 }
 
-#section .event .banner2 ul {
+#section .event .banner ul {
     overflow:hidden;
 }
 
-#section .event .banner2 ul li {
+#section .event .banner ul li {
     max-width : 470px;
     float:left;
     border: 1px solid rgba(0,0,0,0.07);
 }
 
-#section .event .banner2 ul li+li {
+#section .event .banner ul li+li {
     margin-left: 20px;
 }

@@ -16,11 +16,14 @@
     <header id="header">
         <div class="row">
             <!-- Logo -->
-            <h1 class="logo"><a href="#"><img src="./img/h1_logo_pc_w.png" alt="x"></a></h1>
+            <h1 class="logo"><a href="#"><img src="./img/h1_logo_pc_w.png" alt="x"><span class="blind">로고</span></a></h1>
             <!-- Nav -->
             <nav class="nav">
                 <ul class="depth1">
-                    <li><a href=""><i class="fas fa-search"></i></a><span class="blind"> 검색</span></li>
+                    <li class="search"><a href="">
+                        <i class="fas fa-search"></i>
+                    </a><span class="blind"> 검색</span>
+                    </li>
                     <li><a href="#">내주변</a></li>
                     <li><a href="#">예약내역</a></li>
                     <li><a href="#">더보기</a>
@@ -111,8 +114,8 @@
                     <div class="downloadinfo">
                         <div class="dldtitle"><p>앱 다운 받고 <strong>더 많은 혜택</strong> 받으세요</p></div>
                                 <div class="dldbox">
-                                    <a href="https://play.google.com/store/apps/details?id=kr.goodchoice.abouthere" target="_blank"> <img src="./img/GET IT ON Google Play.png" alt="x"></a>
-                                    <a href="https://apps.apple.com/kr/app/yeogieottae-1deung-sugbag/id884043462?ign-mpt=uo%3D2" target="_blank"><img src="./img/Download on the App Store.png" alt="x"></a>
+                                    <a href="https://play.google.com/store/apps/details?id=kr.goodchoice.abouthere" target="_blank"> <img src="./img/GET IT ON Google Play.png" alt="x"><span class="blind">구글 플레이스토어</span></a>
+                                    <a href="https://apps.apple.com/kr/app/yeogieottae-1deung-sugbag/id884043462?ign-mpt=uo%3D2" target="_blank"><img src="./img/Download on the App Store.png" alt="x"><span class="blind">애플앱스토어</span></a>
                                 </div>
                     </div>
                 </div>
@@ -120,18 +123,19 @@
                 <!-- event -->
                 <div class="event">
                     <h2>이벤트</h2>
-                    <div class="banner1">
-                        <!-- banner1 추후 slide 형식  
-                            <img src="./img/slide3.jpg" alt="">
-                            <img src="./img/slide2.png" alt="">
-                        -->
-                        
-                        <a href="#"><img src="./img/slide1.jpg" alt="x"></a>
+                    <div class="slideouter">
+                        <div class="slideinner">
+                            <a href="#"><img src="./img/slide1.jpg" alt="x"><span class="blind">이벤트1</span></a>
+                            <!-- 추후 slide 형식  
+                                <a href=""><img src="./img/slide3.jpg" alt=""><span class="blind">이벤트1</span></a>
+                                <a href=""><img src="./img/slide2.png" alt=""><span class="blind">이벤트2</span></a>
+                            -->
+                        </div>
                     </div>
-                    <div class="banner2">
+                    <div class="banner">
                         <ul>
-                            <li><a href="#" target="_blank"><img src="./img/advertisement.png" alt="x"></a></li>
-                            <li><a href="#" target="_blank"><img src="./img/guesthousejoin.png" alt="x"></a></li>
+                            <li><a href="#" target="_blank"><img src="./img/advertisement.png" alt="x"><span class="blind">광고 신청하기</span></a></li>
+                            <li><a href="#" target="_blank"><img src="./img/guesthousejoin.png" alt="x"><span class="blind">게스트하우스 등록하기</span></a></li>
                         </ul>
                     </div>
                 </div>
