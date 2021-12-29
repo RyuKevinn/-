@@ -1,9 +1,21 @@
 @charset "utf-8";
 
+.bg{
+    background-image:linear-gradient(-45deg, #F7323F, #F7323F);
+    height:3000px;
+    width: 300px;
+    position:fixed;
+    top : 0;
+    left: 70%;
+    z-index:-1;
+    transform: skew(40deg);
+    opacity: 0.05;
+}
+
 /* header 구역  */
 
-
-#header {
+#header { 
+        
     background: #F7323F;
     position: fixed;
     z-index: 2;
@@ -49,7 +61,7 @@
     font-weight: bold;
 }
 
-#header .nav .depth2 {
+#header .nav .depth1 .depth2 {
     width: 160px;
     position: absolute;
     top: 100%;
@@ -60,18 +72,21 @@
     background: white;
     color: black;
     box-shadow: 5px 10px 20px 1px rgb(0, 0, 0, 0.7);
+    transition: all 1s;
 }
 
-#header .nav .depth2 li a {
+#header .nav .depth1>li:hover .depth2 {
+    display: block;
+}
+
+
+#header .nav .depth1 .depth2>li a {
     display: block;
     text-align: center;
     padding: 10px;
     transition: all 0.5s
 }
 
-#header .nav .depth1>li:hover .depth2 {
-    display: block;
-}
 
 #header .nav .depth1>li .depth2> li:hover>a {
     background: rgba(0,0,0,0.2);

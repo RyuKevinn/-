@@ -1,14 +1,10 @@
 @charset "utf-8";
 
-
-/* main {
-    padding: 0 0 0 30px;
-} */
 /* main category */
 
 #section>.mainimg {
     height: 580px;
-    background: #fff url(../img/mainspot_211216.png) no-repeat;
+    background: url(../img/mainspot_211216.png) no-repeat;
     background-size: 924px auto;
     background-position: bottom;
 }
@@ -70,14 +66,19 @@
 #section .news .newsbox {
     overflow: hidden;
     padding-top: 30px;
+    /* border: 1px solid blue; */
+    
 }
 
 #section .news .newsbox li {
     float:left;
     width:468px;
     height: 162px;
-    border: 1px solid rgba(0,0,0,0.1);
+    border: 1px solid rgba(0,0,0,0.2);
     position:relative;
+    /* border: 1px solid yellow; */
+    border-radius: 50px;
+    overflow:hidden;
 }
 
 
