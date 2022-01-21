@@ -6,10 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>여기어때index</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css">
+    
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/rwdcommon.css">
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css">
+    <link rel="stylesheet" href="./css/rwdindex.css">
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 
 <body>
@@ -17,13 +24,53 @@
     <header id="header">
         <div class="row">
             <!-- Logo -->
-            <h1 class="logo"><a href="#"><img src="./img/h1_logo_pc_w.png" alt="x"><span class="blind">로고</span></a></h1>
+            <h1 class="logo"><span class="blind">로고</span><a href="#"><img src="./img/h1_logo_pc_w.png" alt="x"></img></a></h1>
+            <div class="msearch">
+                <a href="">
+                <i class="fas fa-search"></i>
+            </a><span class="blind"> 검색</span>
+            </div>
+            <div class="topmenu">
+                <span class="blind">네비게이션열고닫기</span>
+                <i class="fas fa-bars"></i>
+            </div>
+            <!-- mobile nav -->
+            <div class="opennav">
+                <div class="mnav">
+                    <ul class="loginbox">
+                        <li><a href="">로그인</a></li>
+                        <li><a href="">회원가입</a></li>
+                    </ul>
+                    <ul class="depth1">
+                        <li> <a href="">예약확인</a>
+                        <div></div>
+                        </li>
+                        <li><a href="">숙소 찾아보기</a></li>
+                        <li><a href="">여기어때 소식 보기</a></li>
+                        <li class="cs"><a href="tel:1588-1600">
+                        <h3>고객센터</h3>
+                        <p class="csnumber">1588-1600</p>
+                        <p class="time">평일 09:00 - 18:00</p>
+                        <p class="time">주말 10:00 - 13:00</p>
+                    </a>
+                    </li>
+                    </ul>
+                    <ul class="advertise">
+                        <li><a href="">사업자 페이지</a></li>
+                        <li><a href="">광고주 신청하기</a></li>
+                    </ul>
+                </div>
+            </div>
+
             <!-- Nav -->
             <nav class="nav">
                 <ul class="depth1">
-                    <li class="search"><a href="">
-                        <i class="fas fa-search"></i>
-                    </a><span class="blind"> 검색</span>
+                    <li>
+                        <div class="search">
+                            <a href="">
+                            <i class="fas fa-search"></i>
+                        </a><span class="blind"> 검색</span>
+                        </div>
                     </li>
                     <li><a href="#">내주변</a></li>
                     <li><a href="#">예약내역</a></li>
@@ -37,7 +84,7 @@
                             <li><a href="#">약관 및 정책</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">로그인</a></li>
+                    <li><a href="./join.html">로그인</a></li>
                 </ul>
             </nav>
         </div>
@@ -90,7 +137,7 @@
                 <!-- news -->
                 <div class="news">
                     <h2>여기어때 소식</h2>
-                    <ul class="newsbox">
+                    <ul class="newsbox cf">
                         <li><a href="#">
                                 <img src="./img/business.png" alt="x">
                                 <div class="nstext">
@@ -124,14 +171,15 @@
                 <!-- event -->
                 <div class="event">
                     <h2>이벤트</h2>
-                    <div class="slideouter">
-                        <div class="slideinner">
-                            <a href="#"><img src="./img/slide1.jpg" alt="x"><span class="blind">이벤트1</span></a>
-                            <!-- 추후 slide 형식  
-                                <a href=""><img src="./img/slide3.jpg" alt=""><span class="blind">이벤트1</span></a>
-                                <a href=""><img src="./img/slide2.png" alt=""><span class="blind">이벤트2</span></a>
-                            -->
+                    <div class="slideOuter">
+                        <div class="slideInner">
+                            <div><a href="#"><img src="./img/slide1.jpg" alt="x"><span class="blind">이벤트1</span></a> </div>
+                                <div><a href=""><img src="./img/slide3.jpg" alt=""><span class="blind">이벤트1</span></a></div>
+                                <div><a href=""><img src="./img/slide2.png" alt=""><span class="blind">이벤트2</span></a></div>
                         </div>
+                    </div>
+                    <div class="mevent">
+                        <img src="./img/대한민국 숙박대전 전국편.png" alt="">
                     </div>
                     <div class="banner">
                         <ul>
@@ -148,11 +196,6 @@
 
 
     <footer id="footer">
-        <!-- top button -->
-        <div class="topbtn">
-            <a href=""><img src="./img/ico_top.png" alt="x"></a>
-        </div>
-        
         <!-- footer area -->
         <div class="row">
             <div class="footerlink">
@@ -200,8 +243,8 @@
 
 
 
-
-
+    <script src="./js/common.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>

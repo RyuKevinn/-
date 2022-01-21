@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+@media screen and (max-width:1024px) {
+    
+
+    /* main category */
+    #section>.mainimg {
+        height: unset;
+        background: unset;
+    }
+    
+    #section .category{
+        margin-top: 50px;
+    }
+    #section .category .depth1 {
+        padding: 10px 0 30px;
+    }
+    #section .category .depth1 li { 
+        width:33%;
+        margin-bottom: 50px;
+    }
+
+    #section .category .depth1 li>a::before {
+        content: unset;
+        position:unset;
+        border-radius: unset;
+    }
+    #section .category .depth1 li>a>div {
+        display:unset;
+    }
+    #section .category .depth1 li img{
+        width: 50px;
+        height: 50px;
+    }
+    #section .category .depth1 li span {
+        width: 100px;
+        display:unset;
+        /* width:50px; */
+        text-align: center;
+        position:absolute;
+        bottom:-50%;
+        left:50%;
+        transform: translateX(-50%);
+        padding-top: 10px;
+        color: #707070;
+        font-size: 13px;
+    }
+
+
+    /* news */
+#section .news { 
+    display:none;
+}
+
+/* app download */
+
+#section .downloadbox {
+    height: 220px;
+    margin-bottom : 40px;
+}
+
+#section .downloadbox .downloadinfo .dldtitle {
+    font-size : 18px;
+}
+
+#section .downloadbox .downloadinfo .dldbox  img{
+    width:138px;
+    /* background: blue; */
+}
+
+
+/* event */
+#section .event {
+    max-width: 960px;
+    padding-bottom: 50px;
+}
+
+#section .event h2{
+    font-size: 20px;
+    text-align: center;
+}
+
+#section .event .slideOuter{
+    padding: 20px 0 30px;
+
+}
+
+#section .event .banner {
+    display: none;
+}
+
+#section .event .mevent{
+    display: unset;  
+}
+
+
+}

@@ -1,0 +1,206 @@
+@charset "utf-8";
+
+@media screen and (max-width:1024px) {
+
+    
+    .bg{
+        width: 200px;
+        left: 700px;
+        opacity: 0.1;
+    }
+
+    #header { 
+        
+        background: #F7323F;
+        position: fixed;
+        z-index: 2;
+        width: 100%;
+        top: 0;
+        left: 0;
+        /* transition: all 0.5s; */
+    }
+
+    #header .logo{
+        /* display: none; */
+        position:relative;
+        top:-5px;
+        left:50%;
+        transform:translate(-50%,0);
+        margin:unset
+    }
+
+    #header .msearch{
+        position:absolute;
+        top:10px;
+        right: 30px;
+        color: white;
+        font-size: 18px;
+        z-index: 999999;
+    }
+    #header .msearch.on{
+        color:rgba(0,0,0,0.5)
+    }
+    #header .msearch.scr{
+        color:#F7323F
+    }
+
+    #header .topmenu i{
+        position:fixed;
+        top: 13px;
+        left: 30px;
+        font-size: 20px;
+        color:white;
+        cursor: pointer;
+    }
+
+    #header .topmenu.on i{
+        color:rgba(0,0,0,0.5)
+    }
+
+    #header .topmenu.scr i{
+        color:#F7323F
+    }
+
+
+
+    #header .opennav .mnav{
+        text-align: center;
+        transform: translateX(-120%);
+        transition: all 0.3s;
+        position:fixed;
+        z-index:99;
+        top:42px;
+        left:0;
+        position:absolute;
+        width:240px;
+        height:94vh;
+        background:#F7323F;
+        box-shadow: 5px 5px 15px 1px rgba(0,0,0,0.7);
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        padding-top: 80px;
+        color:white;
+        overflow-y: scroll;
+        -ms-overflow-style: none;}
+        ::-webkit-scrollbar  {display: none;
+        
+    }
+    #header .opennav .mnav.on{
+        transform: translateX(0%);
+    }
+
+    #header .opennav .loginbox{
+        margin-bottom: 70px;
+    }
+    
+    #header .opennav .loginbox li{
+        background:#f84e59;
+        border: 5px solid rgba(255,255,255,0.4);
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    #header .opennav .loginbox li.on{
+        border: 5px solid white;
+    }
+    #header .opennav .loginbox li a{
+        padding: 10px 0;
+        display:block
+    }
+
+    #header .opennav .depth1 li{
+        border: 5px solid rgba(255,255,255,0.4);
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    #header .opennav .depth1 li.on {
+        border: 5px solid white;
+    }
+    
+    #header .opennav .depth1 li.on:last-child{
+        border: 5px solid white;
+    }
+
+    #header .opennav .depth1 li a{
+        padding:  15px;
+        display: block;
+    }
+    #header .opennav .depth1 li:last-child{
+        margin: 50px;
+    }
+
+    #header .opennav .depth1 .cs h3{
+        margin-bottom: 10px;
+
+    }
+
+    #header .opennav .depth1 .cs p {
+        margin-bottom: 10px;
+    }
+    
+    #header .opennav .depth1 .cs .csnumber{
+        font-size: 20px;
+        margin-bottom: 15px;
+        
+    }
+
+    #header .opennav .depth1 .time{
+        font-size: 12px;
+    }
+
+    #header .opennav .advertise{
+        margin:70% 0 50% 0;        
+        width:100%;
+        border: 2px solid rgba(255,255,255,0.4);
+    }
+    #header .opennav .advertise li:last-child{
+        border-top: 2px solid rgba(255,255,255,0.4)
+    }
+
+
+    #header .opennav .advertise li.on{
+        background:#f84e59
+    }
+    
+    #header .opennav .advertise li a{
+        padding: 10px 0;
+        display:block
+    }
+
+    #header .nav { 
+        display:none;
+    }
+
+
+
+/* footer 구역 */
+#footer .row {
+    padding: 30px 20px;
+}
+
+#footer .row .footerlink,
+#footer .row .info {
+    font-size: 11px;
+}
+#footer .row .info .infodesk {
+    display: none;
+}
+
+
+#footer .row .info .companyinfo ul>li:first-child {
+    
+    padding: 10px 0 5px;
+}
+#footer .row .sns {
+    padding: 10px 0 10px ;
+}
+
+#footer .row .sns a {
+    font-size : 20px;
+}
+
+
+
+
+
+}

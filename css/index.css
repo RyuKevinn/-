@@ -25,16 +25,18 @@
 #section .category .depth1 li>a::before {
     content: '';
     position:absolute;
-    top:-6%;
-    right:14.3%;
-    width: 82px;
-    height:82px;
+    top:0;
+    right:0;
+    bottom: 0;
+    left:0;
+    /* width: 82px; */
+    /* height:82px; */
     border-radius: 50%;
-    transition: all 0.7s
+    transition: all 0.5s;
 }
 
-#section .category .depth1 li>a:hover::before{
-    background: rgba(0,0,0,0.15)
+#section .category .depth1 li>a.on::before{
+    background: rgba(0,0,0,0.15);
 }
 
 #section .category .depth1 li>a>div {
@@ -54,7 +56,7 @@
 
 
 .article{
-    padding-left:30px;
+    padding:0 20px;
 }
 
 /* news */
@@ -64,21 +66,26 @@
 }
 
 #section .news .newsbox {
-    overflow: hidden;
+    /* overflow: hidden; */
     padding-top: 30px;
     /* border: 1px solid blue; */
+    display: flex
     
 }
 
 #section .news .newsbox li {
-    float:left;
-    width:468px;
+    /* float:left; */
+    /* display:flex; */
+    /* top:0; */
+    /* left:0; */
+    width:48%;
     height: 162px;
     border: 1px solid rgba(0,0,0,0.2);
     position:relative;
     /* border: 1px solid yellow; */
     border-radius: 50px;
     overflow:hidden;
+    
 }
 
 
@@ -105,7 +112,7 @@ margin-left: 16px;}
 #section .news .newsbox li .nstext p {
     padding-top: 14px;
     line-height: 1.7em;
-    font-size:17px;
+    font-size:16px;
     color: #707070
 }
 
@@ -113,7 +120,7 @@ margin-left: 16px;}
 
 #section .downloadbox {
     height: 320px;
-    width: 962px;
+    max-width: 962px;
     background: url(../img/bg_appdown.png) no-repeat;
     background-size: cover;
     margin-bottom : 70px;
@@ -121,7 +128,7 @@ margin-left: 16px;}
 
 #section .downloadbox .downloadinfo {
     text-align : center;
-    padding-top : 90px;
+    transform: translateY(70%);
     /* border: 1px solid red; */
 } 
 
@@ -147,25 +154,30 @@ margin-left: 16px;}
     padding-bottom: 120px;
 }
 
-#section .event .slideouter{
+#section .event .slideOuter{
     padding: 30px 0 25px;
 
 }
 
-#section .event .slideouter .slideinner img {
-    width:100%
+#section .event .mevent{
+    display: none;
 }
 
+/* #section .event .slideOuter .slideInner img {
+    width:100%
+} */
+
 #section .event .banner ul {
-    overflow:hidden;
+    display:flex;
 }
 
 #section .event .banner ul li {
     max-width : 470px;
-    float:left;
     border: 1px solid rgba(0,0,0,0.07);
 }
 
 #section .event .banner ul li+li {
     margin-left: 20px;
 }
+
+
