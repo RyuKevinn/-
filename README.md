@@ -1,1 +1,1 @@
-https://ryukevinn.github.io/goodchoice/
+https://ryukevinn.github.io/jQuery_goodchoice/
