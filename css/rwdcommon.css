@@ -78,11 +78,11 @@
         box-shadow: 5px 5px 15px 1px rgba(0,0,0,0.7);
         border-top-right-radius: 30px;
         border-bottom-right-radius: 30px;
-        padding-top: 80px;
+        padding-top: 40px;
         color:white;
-        overflow-y: scroll;
+        /* overflow-y: scroll;
         -ms-overflow-style: none;}
-        ::-webkit-scrollbar  {display: none;
+        ::-webkit-scrollbar  {display: none; */
         
     }
     #header .opennav .mnav.on{
@@ -90,7 +90,7 @@
     }
 
     #header .opennav .loginbox{
-        margin-bottom: 70px;
+        margin-bottom: 20px;
     }
     
     #header .opennav .loginbox li{
@@ -110,7 +110,7 @@
     #header .opennav .depth1 li{
         border: 5px solid rgba(255,255,255,0.4);
         border-radius: 10px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     #header .opennav .depth1 li.on {
@@ -122,11 +122,8 @@
     }
 
     #header .opennav .depth1 li a{
-        padding:  15px;
+        padding:  8px;
         display: block;
-    }
-    #header .opennav .depth1 li:last-child{
-        margin: 50px;
     }
 
     #header .opennav .depth1 .cs h3{
@@ -140,7 +137,7 @@
     
     #header .opennav .depth1 .cs .csnumber{
         font-size: 20px;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
         
     }
 
@@ -149,9 +146,9 @@
     }
 
     #header .opennav .advertise{
-        margin:70% 0 50% 0;        
+        margin-top: 20px;
         width:100%;
-        border: 2px solid rgba(255,255,255,0.4);
+        /* border: 2px solid rgba(255,255,255,0.4); */
     }
     #header .opennav .advertise li:last-child{
         border-top: 2px solid rgba(255,255,255,0.4)
@@ -159,7 +156,7 @@
 
 
     #header .opennav .advertise li.on{
-        background:#f84e59
+        color:black;;
     }
     
     #header .opennav .advertise li a{

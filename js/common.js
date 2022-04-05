@@ -11,24 +11,24 @@ function scrollOX(status) {
 var scX = scrollOX('hidden')
 var scO = scrollOX('scroll')
 var scD = scX - scO
+console.log(scX,scO)
 if (scD>0) {
     deviceSize1 = deviceSize1 - scD
     deviceSize2 = deviceSize2 - scD
 }
-
 function init(){
     var ww = $(window).width()
+    console.log(ww,deviceSize1,deviceSize2)
     if (ww>deviceSize1 && !$('html').hasClass('pc')) {
-        $('html').addClass('pc').removeClass('tablet')
-
-        
-        
+        $('html').addClass('pc').removeClass('tablet mobile')
+        $('html').css({ overflowY:'auto' })
         $('#header .topmenu').css({display:'none'})
         $('#header .opennav').css({display:'none'})
         $('#header .msearch').css({display:'none'})
         $('html').scrollTop(0)
     } else if (ww>deviceSize2 && ww<=deviceSize1 && !$('html').hasClass('tablet')) {
         $('html').addClass('tablet').removeClass('pc mobile')
+        $('html').css({ overflowY:'auto' })
         $('#header .topmenu').css({display:'unset'})
         $('#header .opennav').css({display:'unset'})
         $('#header .msearch').css({display:'inline'})
@@ -38,7 +38,7 @@ function init(){
         $('html').scrollTop(0)
     } else if (ww<=deviceSize2 && !$('html').hasClass('mobile')) {
         $('html').addClass('mobile').removeClass('tablet pc')
-
+        $('html').css({ overflowY:'auto' })
         $('html').scrollTop(0)
     }
 }
