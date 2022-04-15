@@ -1,0 +1,86 @@
+.joinBox{
+    min-height:100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.joinBox h2{
+    text-align: center;
+    padding: 50px 0 30px;
+}
+.joinBox fieldset{
+    border: 1px solid black;
+    padding:30px;
+    border-radius: 10px;;
+    background: white;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+.joinBox fieldset h3{
+    padding-bottom: 20px;
+}
+.joinBox fieldset th{
+    width: 40%;
+    padding-right:20px;
+    font-size:90%;
+}
+.joinBox fieldset input{
+    height: 30px;
+    margin: 5px 0;
+    border:none;
+    border-bottom:2px solid #f7323F
+}
+.joinBox fieldset #checkid{
+    padding:3px;
+    cursor: pointer;
+    border:1px solid black;;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+.joinBox fieldset #checkid:hover{
+    background: #f7323F;
+    color:white;
+}
+
+.joinBox fieldset select{
+    margin : 10px 0;
+}
+.joinBox fieldset .pwd  span{
+font-size: 10px;
+color:red;
+}
+.joinBox fieldset .event {
+    position:relative;
+}
+.joinBox fieldset .event span{
+    font-size: 10px;
+    position:absolute;
+    top:100%;
+    left:-10%;
+}
+
+.joinBox .btn{
+    text-align: center;
+    margin: 40px 0;
+}
+.joinBox .btn button{
+    width: 150px;
+    padding: 10px 0px;
+    margin: 0 10px;
+    border-radius: 10px;
+    border: 1px solid black;;
+    background: #f7323F;
+    color:white;
+    font-size: 16px;
+    cursor: pointer;
+    transition:all 0.5s
+}
+.joinBox .btn button:hover{
+    background: #e87d85;
+    color:black
+}

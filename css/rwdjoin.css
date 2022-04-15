@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+@media screen and (max-width:800px) {
+    .joinBox fieldset{
+        padding: 40px 10px;
+    }
+    .joinBox fieldset th{
+        width: 120px;
+        font-size: 12px;
+        font-size:90%;
+    }
+    .joinBox fieldset input{
+        width: 60%;
+        margin-left:10px;
+    }
+    .joinBox fieldset .pwd{
+        height: 80px;;
+        font-size: 10px;
+        color:red;
+        position:relative;
+    }
+    .joinBox fieldset .pwd span{
+        position:absolute;
+        top:60px;
+        left:0;
+    }
+    .joinBox fieldset tr:last-child{
+        height:100px;
+    }
+    .joinBox fieldset .event span{
+        top:70%;
+        left:10px;
+        width:250px;
+    }
+    .joinBox fieldset .event input{
+        width:15px
+    }
+}

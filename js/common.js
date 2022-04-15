@@ -32,9 +32,6 @@ function init(){
         $('#header .topmenu').css({display:'unset'})
         $('#header .opennav').css({display:'unset'})
         $('#header .msearch').css({display:'inline'})
-        
-        
-        
         $('html').scrollTop(0)
     } else if (ww<=deviceSize2 && !$('html').hasClass('mobile')) {
         $('html').addClass('mobile').removeClass('tablet pc')
