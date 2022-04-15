@@ -5,7 +5,7 @@ Link - https://ryukevinn.github.io/jQuery_goodchoice/
 
 -----------------------------
 
-프로젝트 명 : Art.Museum
+프로젝트 명 : 여기어때 반응형
 
 ---------------------------------
 
